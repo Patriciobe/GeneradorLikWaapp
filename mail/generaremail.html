@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Correos Electrónicos</title>
+  <!-- Puedes agregar tus estilos CSS aquí -->
+</head>
+<body>
+  <div class="container">
+    <form id="emailForm">
+      <label for="to-address">Destinatario:</label>
+      <input type="email" id="to-address" placeholder="Ingrese la dirección de correo del destinatario" required>
+
+      <label for="subject">Asunto:</label>
+      <input type="text" id="subject" placeholder="Ingrese el asunto del correo" required>
+
+      <label for="body">Cuerpo del Correo:</label>
+      <textarea id="body" placeholder="Ingrese el cuerpo del correo"></textarea>
+
+      <button type="button" id="generateEmailBtn">Generar Correo</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script type="module" src="generaremail.js"></script>
+</body>
+</html>
